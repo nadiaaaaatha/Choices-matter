@@ -1,0 +1,82 @@
+	
+	
+	
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Decision Making Game - พัฒนาการตัดสินใจ</title>
+
+<link rel="stylesheet" href="question.css">
+
+
+</head>
+<body>
+<div class="game-container">
+    <div class="floating-decoration"></div>
+    <div class="floating-decoration"></div>
+    <div class="floating-decoration"></div>
+
+    <div class="game-header">
+        <h1 class="game-title">Decision Making Game</h1>
+        <p class="game-subtitle">พัฒนาทักษะการตัดสินใจในชีวิตประจำวัน</p>
+    </div>
+
+    <div class="stats-bar">
+        <div class="character-display">
+            <div class="character-avatar" id="character-avatar">
+                <div class="pixel-character">
+                    <div class="pixel-hair"></div>
+                    <div class="pixel-head"></div>
+                    <div class="pixel-eyes">
+                        <div class="pixel-eye-left"></div>
+                        <div class="pixel-eye-right"></div>
+                    </div>
+                    <div class="pixel-mouth"></div>
+                    <div class="pixel-body"></div>
+                    <div class="pixel-arm-left"></div>
+                    <div class="pixel-arm-right"></div>
+                    <div class="pixel-leg-left"></div>
+                    <div class="pixel-leg-right"></div>
+                </div>
+            </div>
+            <div class="character-mood" id="character-mood">พร้อมเริ่มต้น</div>
+            <div class="character-status" id="character-status">มาเริ่มเกมกันเลย!</div>
+        </div>
+    </div>
+
+    <div class="progress-bar">
+        <div class="progress-fill" id="progress-fill"></div>
+    </div>
+
+    <div class="scenario-card" id="scenario-card">
+        <h2 class="scenario-title" id="scenario-title">เริ่มต้นการผจญภัย</h2>
+        <p class="scenario-text" id="scenario-text">คุณพร้อมที่จะเริ่มเกมพัฒนาทักษะการตัดสินใจแล้วหรือยัง?</p>
+        <div class="choices-container" id="choices-container">
+            <button class="choice-btn" id="start-btn" onclick="startGame()" disabled>
+                <span class="choice-number">1</span>พร้อมแล้ว เริ่มเกมเลย!
+            </button>                      
+        </div>
+    </div>
+
+    <div class="feedback-section" id="feedback-section">
+        <h3 class="feedback-title" id="feedback-title">ผลลัพธ์</h3>
+        <p class="feedback-text" id="feedback-text"></p>
+        <div class="skill-development" id="skill-development">
+            <h4 class="skill-title" id="skill-title">ทักษะที่พัฒนา</h4>
+            <p class="skill-text" id="skill-text"></p>
+        </div>
+        <button class="next-btn" id="next-btn" onclick="nextScenario()">ต่อไป</button>
+    </div>
+
+    <div class="game-over" id="game-over">
+        <h2 class="game-over-title">เกมจบแล้ว!</h2>
+        <div class="final-score" id="final-score"></div>
+        <button class="restart-btn" onclick="restartGame()">เริ่มใหม่</button>
+    </div>
+</div>
+
+<script src="question.js"></script>
+</body>
+</html>
